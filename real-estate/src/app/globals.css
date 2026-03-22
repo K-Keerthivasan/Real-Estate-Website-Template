@@ -1,0 +1,115 @@
+@import "tailwindcss";
+
+/* Enable class-based dark mode for Tailwind v4 */
+@variant dark (&:where(.dark, .dark *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --muted: #667085;
+  --panel: #f4f7fb;
+  --panel-strong: #e6eef6;
+  --line: rgba(26, 26, 26, 0.1);
+  --sky: #0ea5e9;
+  --sky-soft: #dff4ff;
+  --font-outfit:
+    "Outfit", "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+  --font-cormorant:
+    "Cormorant Garamond", "Iowan Old Style", "Palatino Linotype", serif;
+}
+
+/* Dark mode overrides */
+.dark {
+  --background: #0c111d;
+  --foreground: #f0f4f8;
+  --muted: #94a3b8;
+  --panel: #131b2e;
+  --panel-strong: #1a2540;
+  --line: rgba(240, 244, 248, 0.1);
+  --sky: #38bdf8;
+  --sky-soft: #082f49;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-muted: var(--muted);
+  --color-panel: var(--panel);
+  --color-panel-strong: var(--panel-strong);
+  --color-line: var(--line);
+  --color-sky: var(--sky);
+  --color-sky-soft: var(--sky-soft);
+  --font-sans: var(--font-outfit);
+  --font-serif: var(--font-cormorant);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    radial-gradient(circle at top, rgba(14, 165, 233, 0.08), transparent 30%),
+    linear-gradient(180deg, #ffffff 0%, #f7fbfe 100%);
+}
+
+.dark body {
+  background:
+    radial-gradient(circle at top, rgba(14, 165, 233, 0.06), transparent 30%),
+    linear-gradient(180deg, #0c111d 0%, #0d1526 100%);
+}
+
+a,
+button,
+input,
+select,
+textarea {
+  transition:
+    color 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease,
+    opacity 180ms ease,
+    transform 180ms ease;
+}
+
+::selection {
+  background: rgba(14, 165, 233, 0.18);
+}
+
+.shell {
+  @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
+}
+
+.luxury-panel {
+  @apply rounded-[28px] border border-line/80 bg-white/88 shadow-[0_24px_80px_rgba(15,23,42,0.08)] backdrop-blur;
+}
+
+.eyebrow {
+  @apply text-xs font-medium uppercase tracking-[0.32em] text-sky;
+}
+
+.section-title {
+  @apply font-serif text-4xl leading-none text-foreground sm:text-5xl;
+}
+
+.soft-grid {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.35) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.35) 1px, transparent 1px);
+  background-position: center;
+  background-size: 40px 40px;
+}
+
+.image-overlay {
+  background:
+    linear-gradient(180deg, rgba(15, 23, 42, 0.08) 0%, rgba(15, 23, 42, 0.65) 100%),
+    linear-gradient(120deg, rgba(14, 165, 233, 0.24) 0%, rgba(255, 255, 255, 0) 60%);
+}
+
+.text-balance {
+  text-wrap: balance;
+}
