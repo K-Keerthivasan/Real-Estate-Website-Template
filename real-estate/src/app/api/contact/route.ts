@@ -1,8 +1,6 @@
 import { Resend } from "resend";
 import { z } from "zod";
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 const contactSchema = z.object({
   name: z.string().min(2),
   email: z.string().email(),
@@ -26,6 +24,14 @@ export async function POST(request: Request) {
   }
 
   const { name, email, phone, message, propertySlug, agentEmail } = parsed.data;
+  const resendApiKey = process.env.RESEND_API_KEY;
+
+  if (!resendApiKey) {
+    console.error("Missing RESEND_API_KEY for /api/contact");
+    return Response.json({ error: "Email service is not configured" }, { status: 503 });
+  }
+
+  const resend = new Resend(resendApiKey);
   const toEmail = agentEmail ?? process.env.RESEND_FROM_EMAIL ?? "hello@k2estate.com";
   const fromEmail = process.env.RESEND_FROM_EMAIL ?? "noreply@k2estate.com";
 
