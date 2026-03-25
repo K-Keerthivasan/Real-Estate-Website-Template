@@ -80,36 +80,38 @@ textarea {
   background: rgba(14, 165, 233, 0.18);
 }
 
-.shell {
-  @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
-}
+@layer components {
+  .shell {
+    @apply mx-auto w-full max-w-7xl px-5 sm:px-6 lg:px-8;
+  }
 
-.luxury-panel {
-  @apply rounded-[28px] border border-line/80 bg-white/88 shadow-[0_24px_80px_rgba(15,23,42,0.08)] backdrop-blur;
-}
+  .luxury-panel {
+    @apply rounded-[28px] border border-line/80 bg-background/90 shadow-[0_24px_80px_rgba(15,23,42,0.08)] backdrop-blur;
+  }
 
-.eyebrow {
-  @apply text-xs font-medium uppercase tracking-[0.32em] text-sky;
-}
+  .eyebrow {
+    @apply text-xs font-medium uppercase tracking-[0.32em] text-sky;
+  }
 
-.section-title {
-  @apply font-serif text-4xl leading-none text-foreground sm:text-5xl;
-}
+  .section-title {
+    @apply font-serif text-4xl leading-none text-foreground sm:text-5xl;
+  }
 
-.soft-grid {
-  background-image:
-    linear-gradient(rgba(255, 255, 255, 0.35) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.35) 1px, transparent 1px);
-  background-position: center;
-  background-size: 40px 40px;
-}
+  .soft-grid {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.35) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.35) 1px, transparent 1px);
+    background-position: center;
+    background-size: 40px 40px;
+  }
 
-.image-overlay {
-  background:
-    linear-gradient(180deg, rgba(15, 23, 42, 0.08) 0%, rgba(15, 23, 42, 0.65) 100%),
-    linear-gradient(120deg, rgba(14, 165, 233, 0.24) 0%, rgba(255, 255, 255, 0) 60%);
-}
+  .image-overlay {
+    background:
+      linear-gradient(180deg, rgba(15, 23, 42, 0.08) 0%, rgba(15, 23, 42, 0.65) 100%),
+      linear-gradient(120deg, rgba(14, 165, 233, 0.24) 0%, rgba(255, 255, 255, 0) 60%);
+  }
 
-.text-balance {
-  text-wrap: balance;
+  .text-balance {
+    text-wrap: balance;
+  }
 }

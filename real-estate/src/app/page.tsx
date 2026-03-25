@@ -103,18 +103,18 @@ export default async function HomePage() {
       </section>
 
       <section className="shell">
-        <div className="luxury-panel grid gap-8 overflow-hidden bg-[#1a1a1a] p-8 text-white lg:grid-cols-[0.95fr_1.05fr]">
+        <div className="luxury-panel grid gap-8 overflow-hidden bg-foreground p-8 text-background lg:grid-cols-[0.95fr_1.05fr]">
           <div className="space-y-5">
             <p className="eyebrow">Lead Agent</p>
             <h2 className="font-serif text-5xl leading-none">
               A trusted advisor for design-led homes and discerning buyers.
             </h2>
-            <p className="max-w-xl text-base leading-8 text-white/72">
+            <p className="max-w-xl text-base leading-8 text-background/72">
               Olivia Bennett anchors the brand with white-glove service, sharp pricing strategy, and a calm transaction process that keeps premium sellers confident.
             </p>
             <Link
               href="/agents/olivia-bennett"
-              className="inline-flex rounded-full bg-sky px-5 py-3 text-sm font-medium text-white hover:bg-white hover:text-[#1a1a1a]"
+              className="inline-flex rounded-full bg-sky px-5 py-3 text-sm font-medium text-white hover:bg-background hover:text-foreground"
             >
               Meet Olivia
             </Link>
@@ -127,7 +127,7 @@ export default async function HomePage() {
             ].map((item) => (
               <div
                 key={item}
-                className="rounded-[24px] border border-white/12 bg-white/6 p-5 text-sm leading-7 text-white/78"
+                className="rounded-[24px] border border-background/12 bg-background/6 p-5 text-sm leading-7 text-background/78"
               >
                 {item}
               </div>

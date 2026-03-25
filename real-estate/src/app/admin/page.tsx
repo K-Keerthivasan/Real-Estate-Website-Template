@@ -21,7 +21,7 @@ export default async function AdminDashboardPage() {
         ].map((card) => (
           <div key={card.label} className="luxury-panel p-6">
             <p className="text-sm text-muted">{card.label}</p>
-            <p className="mt-3 font-serif text-5xl">{card.value}</p>
+            <p className="mt-3 truncate font-serif text-3xl xl:text-4xl">{card.value}</p>
           </div>
         ))}
       </section>

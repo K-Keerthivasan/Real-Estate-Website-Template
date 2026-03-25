@@ -55,16 +55,16 @@ export default async function AdminEnquiriesPage() {
                     />
                   </label>
                 </div>
-                <div className="rounded-[24px] bg-[#1a1a1a] p-5 text-white">
-                  <p className="text-xs uppercase tracking-[0.28em] text-white/62">Follow up</p>
-                  <p className="mt-3 text-sm leading-7 text-white/78">
+                <div className="rounded-[24px] bg-foreground p-5 text-background">
+                  <p className="text-xs uppercase tracking-[0.28em] text-background/62">Follow up</p>
+                  <p className="mt-3 text-sm leading-7 text-background/78">
                     Prepared for a CRM action bar or Supabase-backed status updates.
                   </p>
                   <div className="mt-5 space-y-2">
                     {["Schedule call", "Send brochure", "Update stage"].map((action) => (
                       <button
                         key={action}
-                        className="w-full rounded-full border border-white/16 px-4 py-3 text-left text-sm hover:bg-white hover:text-[#1a1a1a]"
+                        className="w-full rounded-full border border-background/16 px-4 py-3 text-left text-sm hover:bg-background hover:text-foreground"
                       >
                         {action}
                       </button>

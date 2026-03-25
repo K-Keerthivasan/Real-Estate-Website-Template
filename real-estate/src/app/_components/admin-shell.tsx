@@ -8,7 +8,7 @@ const adminLinks = [
 
 export function AdminShell({ children }: { children: React.ReactNode }) {
   return (
-    <div className="bg-[#f4f7fb]">
+    <div className="bg-panel">
       <div className="shell grid gap-8 py-12 lg:grid-cols-[260px_minmax(0,1fr)]">
         <aside className="luxury-panel h-fit p-5">
           <p className="eyebrow">Admin Console</p>
