@@ -13,7 +13,7 @@ export function PropertyCard({ property, compact = false }: PropertyCardProps) {
     <article className="luxury-panel overflow-hidden">
       <div
         className={`${compact ? "h-52" : "h-72"} image-overlay soft-grid relative`}
-        style={{ backgroundImage: property.images[0]?.gradient }}
+        style={{ backgroundImage: `url(${property.images[0]?.url})`, backgroundSize: "cover", backgroundPosition: "center" }}
       >
         <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.02),rgba(0,0,0,0.56))]" />
         <div className="absolute left-5 top-5 rounded-full bg-white/92 px-3 py-1 text-xs font-medium text-[#1a1a1a]">

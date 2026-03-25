@@ -135,7 +135,7 @@ function ListingsResults({
         >
           <div
             className="image-overlay soft-grid relative min-h-64"
-            style={{ backgroundImage: property.images[0]?.gradient }}
+            style={{ backgroundImage: `url(${property.images[0]?.url})`, backgroundSize: "cover", backgroundPosition: "center" }}
           >
             <div className="absolute left-4 top-4 rounded-full bg-white/92 px-3 py-1 text-xs font-medium text-[#1a1a1a]">
               {property.status}

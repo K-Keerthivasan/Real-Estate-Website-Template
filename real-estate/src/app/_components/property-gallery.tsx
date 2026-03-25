@@ -25,7 +25,7 @@ export function PropertyGallery({ images, title }: PropertyGalleryProps) {
           <SwiperSlide key={image.id}>
             <div
               className="image-overlay soft-grid relative h-[420px] sm:h-[560px]"
-              style={{ backgroundImage: image.gradient }}
+              style={{ backgroundImage: `url(${image.url})`, backgroundSize: "cover", backgroundPosition: "center" }}
               aria-label={`${title} ${image.alt}`}
             >
               <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.04),rgba(0,0,0,0.58))]" />

@@ -32,7 +32,7 @@ export default async function AdminListingsPage() {
                   <div className="flex items-center gap-4">
                     <div
                       className="h-14 w-18 rounded-2xl"
-                      style={{ backgroundImage: property.images[0]?.gradient }}
+                      style={{ backgroundImage: `url(${property.images[0]?.url})`, backgroundSize: "cover", backgroundPosition: "center" }}
                     />
                     <div>
                       <p className="font-medium text-foreground">{property.title}</p>

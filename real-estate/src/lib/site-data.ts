@@ -3,7 +3,7 @@ export type PropertyStatus = "Active" | "Pending" | "Sold";
 export type PropertyImage = {
   id: string;
   alt: string;
-  gradient: string;
+  url: string;
 };
 
 export type Property = {
@@ -162,9 +162,9 @@ export const properties: Property[] = [
     lat: 40.7163,
     lng: -74.0086,
     images: [
-      { id: "p1-1", alt: "Living room view", gradient: "linear-gradient(135deg, #0f172a 0%, #0ea5e9 45%, #f8fafc 100%)" },
-      { id: "p1-2", alt: "Kitchen detail", gradient: "linear-gradient(135deg, #111827 0%, #334155 35%, #e2e8f0 100%)" },
-      { id: "p1-3", alt: "Terrace at dusk", gradient: "linear-gradient(135deg, #020617 0%, #0369a1 40%, #bae6fd 100%)" },
+      { id: "p1-1", alt: "Living room with skyline views", url: "https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=1200&q=80&fit=crop" },
+      { id: "p1-2", alt: "Calacatta marble kitchen", url: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1200&q=80&fit=crop" },
+      { id: "p1-3", alt: "Rooftop terrace at dusk", url: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=1200&q=80&fit=crop" },
     ],
   },
   {
@@ -197,9 +197,9 @@ export const properties: Property[] = [
     lat: 25.7742,
     lng: -80.1300,
     images: [
-      { id: "p2-1", alt: "Balcony view", gradient: "linear-gradient(135deg, #082f49 0%, #0ea5e9 50%, #ecfeff 100%)" },
-      { id: "p2-2", alt: "Open plan interior", gradient: "linear-gradient(135deg, #164e63 0%, #475569 42%, #f8fafc 100%)" },
-      { id: "p2-3", alt: "Bedroom suite", gradient: "linear-gradient(135deg, #083344 0%, #0284c7 40%, #cffafe 100%)" },
+      { id: "p2-1", alt: "Ocean-facing living area", url: "https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=1200&q=80&fit=crop" },
+      { id: "p2-2", alt: "Open plan interior", url: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80&fit=crop" },
+      { id: "p2-3", alt: "Primary bedroom suite", url: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200&q=80&fit=crop" },
     ],
   },
   {
@@ -232,9 +232,9 @@ export const properties: Property[] = [
     lat: 34.0736,
     lng: -118.4004,
     images: [
-      { id: "p3-1", alt: "Front elevation", gradient: "linear-gradient(135deg, #1f2937 0%, #0ea5e9 35%, #f8fafc 100%)" },
-      { id: "p3-2", alt: "Pool terrace", gradient: "linear-gradient(135deg, #0f172a 0%, #1d4ed8 42%, #dbeafe 100%)" },
-      { id: "p3-3", alt: "Primary suite", gradient: "linear-gradient(135deg, #111827 0%, #475569 45%, #e5e7eb 100%)" },
+      { id: "p3-1", alt: "Grand front elevation", url: "https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=1200&q=80&fit=crop" },
+      { id: "p3-2", alt: "Infinity pool terrace", url: "https://images.unsplash.com/photo-1600607688969-a5bfcd646154?w=1200&q=80&fit=crop" },
+      { id: "p3-3", alt: "Primary bedroom suite", url: "https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?w=1200&q=80&fit=crop" },
     ],
   },
   {
@@ -267,9 +267,9 @@ export const properties: Property[] = [
     lat: 40.7736,
     lng: -73.9566,
     images: [
-      { id: "p4-1", alt: "Reception room", gradient: "linear-gradient(135deg, #1e293b 0%, #64748b 45%, #f8fafc 100%)" },
-      { id: "p4-2", alt: "Dining room", gradient: "linear-gradient(135deg, #0f172a 0%, #0ea5e9 40%, #e0f2fe 100%)" },
-      { id: "p4-3", alt: "Bedroom suite", gradient: "linear-gradient(135deg, #111827 0%, #374151 42%, #e5e7eb 100%)" },
+      { id: "p4-1", alt: "Formal reception room", url: "https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?w=1200&q=80&fit=crop" },
+      { id: "p4-2", alt: "Formal dining room", url: "https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=1200&q=80&fit=crop" },
+      { id: "p4-3", alt: "Bedroom suite", url: "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=1200&q=80&fit=crop" },
     ],
   },
   {
@@ -302,9 +302,9 @@ export const properties: Property[] = [
     lat: 34.1022,
     lng: -118.3590,
     images: [
-      { id: "p5-1", alt: "Exterior dusk view", gradient: "linear-gradient(135deg, #111827 0%, #2563eb 40%, #dbeafe 100%)" },
-      { id: "p5-2", alt: "Pool deck", gradient: "linear-gradient(135deg, #082f49 0%, #0284c7 40%, #e0f2fe 100%)" },
-      { id: "p5-3", alt: "Kitchen island", gradient: "linear-gradient(135deg, #1f2937 0%, #334155 45%, #f1f5f9 100%)" },
+      { id: "p5-1", alt: "Sculptural hillside exterior", url: "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=1200&q=80&fit=crop" },
+      { id: "p5-2", alt: "Infinity pool deck at sunset", url: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?w=1200&q=80&fit=crop" },
+      { id: "p5-3", alt: "Designer kitchen island", url: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=1200&q=80&fit=crop" },
     ],
   },
   {
@@ -337,9 +337,9 @@ export const properties: Property[] = [
     lat: 33.6189,
     lng: -117.9298,
     images: [
-      { id: "p6-1", alt: "Bay terrace", gradient: "linear-gradient(135deg, #164e63 0%, #0ea5e9 45%, #ecfeff 100%)" },
-      { id: "p6-2", alt: "Living room", gradient: "linear-gradient(135deg, #0f172a 0%, #475569 45%, #e2e8f0 100%)" },
-      { id: "p6-3", alt: "Roof deck", gradient: "linear-gradient(135deg, #082f49 0%, #0369a1 38%, #bfdbfe 100%)" },
+      { id: "p6-1", alt: "Waterfront terrace", url: "https://images.unsplash.com/photo-1495521821757-a1efb6729352?w=1200&q=80&fit=crop" },
+      { id: "p6-2", alt: "Open-plan living room", url: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1200&q=80&fit=crop" },
+      { id: "p6-3", alt: "Rooftop lounge", url: "https://images.unsplash.com/photo-1556909114-f6e7ad7d3136?w=1200&q=80&fit=crop" },
     ],
   },
   {
@@ -372,9 +372,9 @@ export const properties: Property[] = [
     lat: 29.7253,
     lng: -95.3904,
     images: [
-      { id: "p7-1", alt: "Main living space", gradient: "linear-gradient(135deg, #111827 0%, #0ea5e9 42%, #f8fafc 100%)" },
-      { id: "p7-2", alt: "Art wall and stair", gradient: "linear-gradient(135deg, #1f2937 0%, #64748b 45%, #e2e8f0 100%)" },
-      { id: "p7-3", alt: "Terrace seating", gradient: "linear-gradient(135deg, #0f172a 0%, #0284c7 42%, #bae6fd 100%)" },
+      { id: "p7-1", alt: "Double-height loft living space", url: "https://images.unsplash.com/photo-1493809842364-78817add7ffb?w=1200&q=80&fit=crop" },
+      { id: "p7-2", alt: "Gallery art wall", url: "https://images.unsplash.com/photo-1493857671505-72967e2e2760?w=1200&q=80&fit=crop" },
+      { id: "p7-3", alt: "Terrace with skyline views", url: "https://images.unsplash.com/photo-1560184897-ae8ff1cb11e4?w=1200&q=80&fit=crop" },
     ],
   },
   {
@@ -407,9 +407,9 @@ export const properties: Property[] = [
     lat: 30.3127,
     lng: -97.7723,
     images: [
-      { id: "p8-1", alt: "Front courtyard", gradient: "linear-gradient(135deg, #1f2937 0%, #38bdf8 38%, #f8fafc 100%)" },
-      { id: "p8-2", alt: "Kitchen and dining", gradient: "linear-gradient(135deg, #292524 0%, #57534e 42%, #fafaf9 100%)" },
-      { id: "p8-3", alt: "Pool court", gradient: "linear-gradient(135deg, #082f49 0%, #0ea5e9 42%, #e0f2fe 100%)" },
+      { id: "p8-1", alt: "Limestone courtyard entrance", url: "https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1200&q=80&fit=crop" },
+      { id: "p8-2", alt: "Gourmet kitchen and dining", url: "https://images.unsplash.com/photo-1449844908441-8829872d2607?w=1200&q=80&fit=crop" },
+      { id: "p8-3", alt: "Resort-style pool court", url: "https://images.unsplash.com/photo-1502920917128-1aa500764cbd?w=1200&q=80&fit=crop" },
     ],
   },
 ];

@@ -5,7 +5,19 @@
       "Bash(npx tsc:*)",
       "Bash(rm:*)",
       "WebFetch(domain:unsplash.com)",
-      "WebSearch"
+      "WebSearch",
+      "Bash(curl -I -s \"https://images.unsplash.com/photo-1512917774080-9991f1c4c750?w=800&q=80\")",
+      "Bash(curl -I -s \"https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=800&q=80\")",
+      "Bash(curl -I -s \"https://images.unsplash.com/photo-1600210491892-03d54c0aaf87?w=800&q=80\")",
+      "Bash(curl -I -s \"https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&q=80\")",
+      "Bash(curl -I -s \"https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=800&q=80\")",
+      "Bash(curl -I -s \"https://images.unsplash.com/photo-1523217582562-09d05ba09360?w=800&q=80\")",
+      "Bash(curl -I -s \"https://images.unsplash.com/photo-1600047509807-ba8f99d2cdde?w=800&q=80\")",
+      "Bash(curl -I -s \"https://images.unsplash.com/photo-1600607688969-a5bfcd646154?w=800&q=80\")",
+      "Bash(curl -I -s \"https://images.unsplash.com/photo-1616047006789-b7af5afb8c20?w=800&q=80\")",
+      "Bash(curl -I -s \"https://images.unsplash.com/photo-1567767292278-a4f21aa2d36e?w=800&q=80\")",
+      "Bash(curl -I -s \"https://images.unsplash.com/photo-1586023492125-27b2c045efd7?w=800&q=80\")",
+      "Bash(curl -I -s \"https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80\")"
     ]
   }
 }
