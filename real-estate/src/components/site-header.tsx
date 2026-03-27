@@ -18,7 +18,7 @@ export function SiteHeader() {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   return (
-    <header className="sticky top-0 z-40 border-b border-line/70 bg-background/80 backdrop-blur-xl">
+    <header className="sticky top-[var(--k2-demo-top-offset,0px)] z-40 border-b border-line/70 bg-background/80 backdrop-blur-xl">
       <div className="shell flex items-center justify-between gap-6 py-4">
         <Link href="/" className="flex items-center gap-3" onClick={() => setMobileOpen(false)}>
           <div className="flex h-11 w-11 items-center justify-center rounded-full bg-foreground text-sm font-semibold tracking-[0.28em] text-background">
@@ -87,3 +87,4 @@ export function SiteHeader() {
     </header>
   );
 }
+

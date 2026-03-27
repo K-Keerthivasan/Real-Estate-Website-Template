@@ -1,7 +1,8 @@
 import type { Metadata } from "next";
-import { ThemeProvider } from "@/lib/theme-provider";
+import { DemoSiteBanner } from "@/components/demo-site-banner";
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { ThemeProvider } from "@/lib/theme-provider";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -22,6 +23,7 @@ export default function RootLayout({
     <html lang="en" className="bg-background text-foreground antialiased" suppressHydrationWarning>
       <body className="min-h-screen bg-background text-foreground">
         <ThemeProvider>
+          <DemoSiteBanner />
           <SiteHeader />
           <main className="flex-1">{children}</main>
           <SiteFooter />

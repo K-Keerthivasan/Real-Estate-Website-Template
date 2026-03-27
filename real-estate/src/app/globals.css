@@ -4,6 +4,8 @@
 @variant dark (&:where(.dark, .dark *));
 
 :root {
+  --k2-demo-top-offset: 0px;
+  --k2-demo-bottom-offset: 0px;
   --background: #ffffff;
   --foreground: #1a1a1a;
   --muted: #667085;
@@ -52,12 +54,16 @@ html {
 }
 
 body {
+  padding-top: var(--k2-demo-top-offset);
+  padding-bottom: var(--k2-demo-bottom-offset);
   background:
     radial-gradient(circle at top, rgba(14, 165, 233, 0.08), transparent 30%),
     linear-gradient(180deg, #ffffff 0%, #f7fbfe 100%);
 }
 
 .dark body {
+  padding-top: var(--k2-demo-top-offset);
+  padding-bottom: var(--k2-demo-bottom-offset);
   background:
     radial-gradient(circle at top, rgba(14, 165, 233, 0.06), transparent 30%),
     linear-gradient(180deg, #0c111d 0%, #0d1526 100%);
@@ -115,3 +121,4 @@ textarea {
     text-wrap: balance;
   }
 }
+
